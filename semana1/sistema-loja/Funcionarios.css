@@ -40,27 +40,11 @@
     opacity: .8;
 }
 
-.corpo p {
-    display: inline;
-    margin-top: -360px;
-    margin-left: -10px;;
+.corpo li {
     font-family: sans-serif;
-    font-size: 20pt;
-    color: black;
-    background: white;
-    border-radius: 30px;
-    opacity: .9;
-    padding: 2px;
-    font-style: oblique;
-    font-weight: bold;
-}
-
-.corpo li a {
-    
-    font-family: sans-serif;
-    font-size: 16pt;
+    font-size: 12pt;
     color: white;
-    margin-left: -800px;
+    background-color: black;
     
 }
 
