@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    background-size: 100%;
+    background-image: url("fundo-cabecalho3.jpg");
+    background-repeat: no-repeat;
+    opacity: .9;
+    
+}
+
+.cabecalho h1 {
+    padding: 1px;
+    margin-top: -40px;
+    font-family: sans-serif;
+    font-size: 46pt;
+    color: black;
+    background: white;
+    border-radius: 30px;
+    opacity: .7;
+    
+}
+
+.corpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+    border-image: none;
+    background-size: 210%;
+    background-image: url("fundo-corpo.jpg");
+    background-repeat: no-repeat;
+    opacity: .8;
+}
+
+.corpo table {
+    width: 40%;
+    height: 50px;
+    background-color: white;
+    margin: auto;
+    margin-top: 5px;
+    
+}
+
+.corpo th, td {
+    font-family: sans-serif;
+    font-size: 11pt;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 1px;
+    padding: 15px;
+    
+    background-color: dimgray;
+}
+
+.rodape p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 14pt;
+    padding-left: 80px;
+    margin: 0 auto;
+}
