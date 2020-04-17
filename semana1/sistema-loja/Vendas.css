@@ -29,8 +29,6 @@
 
 .corpo {
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 1px;
     height: 410px;
     border-image: none;
@@ -38,4 +36,54 @@
     background-image: url("fundo-corpo.jpg");
     background-repeat: no-repeat;
     opacity: .8;
+}
+
+.corpo label {
+    font-family: sans-serif;
+    font-size: 14pt;
+    color: white;
+    padding: 10px;
+    
+}
+
+.corpo input {
+    padding: 6px;
+    margin-top: 50px;
+}
+
+.corpo ol {
+    margin-top: 110px;
+    margin-left: -250px;
+}
+
+.corpo li {
+    font-family: sans-serif;
+    font-size: 12pt;
+    color: white;
+    background-color: black;
+    
+}
+
+.corpo fieldset {
+    background-color: white;
+    margin-top: 110px;
+    margin-left: 450px;
+    padding: 50px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 1px;
+    padding: 15px;
+    background-color: dimgray;
+}
+
+.rodape p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 14pt;
+    padding-left: 80px;
+    margin: 0 auto;
 }
