@@ -20,7 +20,17 @@
     
 }
 
-.cabecalho p {
+.corpo h3 {
+    
+    font-family: 'Alef', sans-serif;
+    font-size: 18pt;
+    margin-left: 50px;
+    margin-top: 200px;
+    
+    
+}
+
+.cabecalho p#home {
     color: white;
     font-family: 'Neucha', cursive;
     font-size: 14pt;
@@ -35,34 +45,35 @@
     color: white;
     
 }
-.corpo img {
-    display: flex;
-    width: 15%;
-    height: 200px;
-    border-radius: 200px;
-    margin-left: 800px;
-    margin-top: -65px;
-}
 
-.corpo li {
+.corpo label {
     
+    display: inline-block;
     font-family: sans-serif;
-    font-size: 12pt;
-    font-weight: bold;
+    font-size: 14pt;
     margin-left: 50px;
-    padding: 5px;
     
 }
 
-.corpo a {
-    color: black;
+.corpo textarea {
+    margin-left: 5px;
 }
 
-.corpo h3 {
+.corpo input {
+    padding: 4px;
+    margin-left: 43px;
     
-    font-family: 'Alef', sans-serif;
-    font-size: 18pt;
-    padding: 20px;
-    margin-top: 180px;
+}
 
+.corpo form {
+    margin-top: 30px;
+}
+
+.corpo fieldset {
+    border: none;
+}
+
+.corpo img {
+    padding-left: 100px;
+    margin-top: 80px;
 }

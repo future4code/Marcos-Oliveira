@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    
+    background-size: 100%;
+    background-image: url("fundo-sobre.jpg");
+    background-repeat: no-repeat;
+}
+
+.cabecalho h2 {
+     
+    color: white;
+    font-family: 'Neucha', cursive;
+    font-size: 38pt;
+    padding: 60px;
+    text-shadow: 2px 2px black;
+    
+}
+
+.corpo h3 {
+    
+    font-family: 'Alef', sans-serif;
+    font-size: 18pt;
+    padding: 20px;
+    margin-top: 20px;
+    
+
+}
+
+h3#proj {
+    padding-top: 50px;
+    font-family: 'Alef', sans-serif;
+}
+
+.corpo li {
+    
+    font-family: sans-serif;
+    font-size: 14pt;
+    margin-left: 60px;
+    padding: 5px;
+    
+}
+
+img {
+    display: flex;
+    width: 40%;
+    height: 350px;
+    margin-left: 700px;
+    margin-top: -370px;
+}

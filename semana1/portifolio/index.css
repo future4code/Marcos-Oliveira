@@ -23,9 +23,9 @@
 
 .corpo h1 {
 
-    font-size: 46pt;
+    font-size: 52pt;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Luckiest Guy', cursive;
     font-style: italic;
     text-shadow: 2px 2px black;
     margin: 190px 0 0 0;
@@ -40,4 +40,9 @@
     margin: -40px 0 0 0;
     margin-left: 420px;
     padding: 20px;
+    
+}
+
+.cabecalho a {
+    text-decoration: none;
 }
