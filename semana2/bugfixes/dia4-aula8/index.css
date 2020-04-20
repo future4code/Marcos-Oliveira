@@ -44,6 +44,9 @@ div img {
     border-radius: 5px;
     font-size: 20px;
     color: white;
+    top: 80px;
+    right: 550px;
+    position: absolute;
 }
 
 .botao-amarelo:hover {
@@ -66,19 +69,10 @@ div img {
   *
   **/
 
-button:first-of-type {
-    top: 80px;
-    right: 550px;
-    position: absolute;
-}
-
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
-}
-
-#container-de-descricao>p {
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 #container-de-descricao>ol {
@@ -124,6 +118,10 @@ td button {
     border-radius: 5px;
     color: black;
 }
+
+td button:hover {
+    background-color: #c44f00;
+}    
 
 .container-do-search {
     margin-top: 20px;
