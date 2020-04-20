@@ -126,6 +126,7 @@ td button {
     border-radius: 5px;
     color: black;
     font-family: 'Roboto', sans-serif;
+    outline: none;
 }
 
 td button:hover {
