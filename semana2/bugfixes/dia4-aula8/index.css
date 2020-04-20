@@ -66,6 +66,12 @@ div img {
   *
   **/
 
+button:first-of-type {
+    top: 80px;
+    right: 550px;
+    position: absolute;
+}
+
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
@@ -77,6 +83,8 @@ div img {
 
 #container-para-comprar {
     background-color: #e7eb90;
+    position: relative;
+    
 }
 
 #container-para-comprar>p {
