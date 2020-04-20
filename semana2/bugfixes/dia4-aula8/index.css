@@ -77,6 +77,10 @@ button:first-of-type {
     color: white;
 }
 
+#container-de-descricao>p {
+    padding-top: 10px;
+}
+
 #container-de-descricao>ol {
     padding: 15px 0px;
 }
@@ -91,6 +95,7 @@ button:first-of-type {
     color: #c44f00;
     padding: 100px 0;
     font-size: 60px;
+    
 }
 
 
