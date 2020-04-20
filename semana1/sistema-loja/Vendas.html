@@ -4,38 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Vendas.css"/>
-    <title>Vendas</title>
+    <title>VENDAS</title>
 </head>
 <body>
-
     <div class="cabecalho">
         <h1>Vendas</h1>
     </div>
-
     <div class="corpo">
         <form action="#">
-            <label for="nome">Produto:</label>
-            <input type="text" name="nome" id="nome"/>
-            <fieldset id="pagamento"><legend>Forma de Pagamento</legend>
-                <input type="radio" name="cartao" id="cartao"/><label for="cartao">Cartão</label>
-                <input type="radio" name="dinheiro" id="dinheiro"/><label for="dinheiro">Dinheiro</label>
+            <label for="nome">Nome do produto:<input type="text" name="nome" id="nome"/></label>
+            <ul>
+                <li>Lista das Vendas:</li>
+                    <ol>
+                        <li>Homefront</li>
+                        <li>Bloodlines</li>
+                        <li>The Division</li>
+                    </ol>
+            </ul>
+            <fieldset>
+                <p>Forma de Pagamento:</p>
+                <input type="radio" name="pgto" ><label for=cartao id="c1">Cartão</label>
+                <input type="radio" name="pgto" ><label for=cartao>Dinheiro</label>
             </fieldset>
-        </form>
-        <ol>
-            <li>Homefront</li>
-            
-            <br>
-            <li>The Division</li>
-            
-            <br>
-            <li>Bloodlines</li>    
-        </ol>
 
+        </form>
     </div>
     <div class="rodape">
         <p>Marcos Oliveira</p>
         <p>marcosroliveira@outlook.com</p>
     </div>
-
 </body>
 </html>
