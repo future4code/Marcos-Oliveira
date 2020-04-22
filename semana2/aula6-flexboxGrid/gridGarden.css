@@ -1,0 +1,57 @@
+#water {
+   grid-column-start: 3;
+}
+
+#poison {
+   grid-column-start: 5;
+}
+
+#water {
+  grid-column-start: 1;
+  grid-column-end: 4
+}
+
+#water {
+  grid-column-start: 5;
+  grid-column-end: 2;
+}
+
+#water {
+  grid-column-start: 1;
+  grid-column-end: -2;
+}
+
+#poison {
+  grid-column-start: -3;
+}
+
+#water {
+  grid-column-start: 2;
+  grid-column-end: span 2;
+}
+
+#water {
+  grid-column-start: 1;
+  grid-column-end: span 5;
+}
+
+#water {
+  grid-column-start: span 3;
+  grid-column-end: 6;
+}
+
+#water {
+  grid-column: 4 / 6;
+}
+
+#water {
+  grid-column: 2 / 5;
+}
+
+#water {
+  grid-row-start: 3;
+}
+
+#water {
+  grid-row: 3 / 6;
+}
