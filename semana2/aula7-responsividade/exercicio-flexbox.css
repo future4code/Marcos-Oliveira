@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 1600px;
+}
+
+.container {
+    display: flex;
+    height: 1300px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background: red;
+    justify-content: flex-start;
+}
+
+.item1 {
+    display: flex;
+    width: 30%;
+    height: 140px;
+    background: blue;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.item2 {
+    display: flex;
+    width: 30%;
+    height: 140px;
+    background: yellow;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.item3 {
+    display: flex;
+    width: 30%;
+    height: 140px;
+    background: green;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.item4 {
+    display: flex;
+    width: 30%;
+    height: 140px;
+    background: blue;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.item5 {
+    display: flex;
+    width: 30%;
+    height: 140px;
+    background: yellow;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.item6 {
+    display: flex;
+    width: 30%;
+    height: 140px;
+    background: green;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.item7 {
+    display: flex;
+    width: 47%;
+    height: 280px;
+    background: black;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.item8 {
+    display: flex;
+    width: 47%;
+    height: 280px;
+    background: black;   
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.item9 {
+    display: flex;
+    width: 30%;
+    height: 140px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.item10 {
+    display: flex;
+    width: 30%;
+    height: 140px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.item11 {
+    display: flex;
+    width: 30%;
+    height: 140px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .item3, .item6, .item11 {
+        display: flex;
+        width: 97%;
+    }
+
+    .item1, .item2, .item4, .item5, .item9, .item10 {
+        display: flex;
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11 {
+        display: flex;
+        width: 95%;
+        height: 95px;
+    }
+}
+    
