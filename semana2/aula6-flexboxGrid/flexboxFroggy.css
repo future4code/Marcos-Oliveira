@@ -1,74 +1,61 @@
 #pond {
-    display: flex;
   justify-content: flex-end;
-  }
+}
 
-  #pond {
-    display: flex;
+#pond {
   justify-content: center;
-  }
+}
 
-  #pond {
-    display: flex;
+#pond {
   justify-content: space-around;
-  }
+}
 
-  #pond {
-    display: flex;
+#pond {
   justify-content: space-between;
-  }
+}
 
-  #pond {
-    display: flex;
+#pond {
   align-items: flex-end;
-  }
+}
 
-  #pond {
-    display: flex;
+#pond {
   justify-content: center;
   align-items: center;
-  }
+}
 
-  #pond {
-    display: flex;
+#pond {
   justify-content: space-around;
   align-items: flex-end;
-  }
+}
 
-  #pond {
-    display: flex;
+#pond {
   flex-direction: row-reverse;
-  }
+}
 
-  #pond {
-    display: flex;
+#pond {
   flex-direction: column;
-  }
+}
 
-  #pond {
-    display: flex;
+#pond {
   flex-direction: row-reverse;
   justify-content: flex-end;
-  }
+}
 
-  #pond {
-    display: flex;
+#pond {
   flex-direction: column;
   justify-content: flex-end;
-  }
+}
 
-  #pond {
-    display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  }
+#pond {
+ flex-direction: column-reverse;
+ justify-content: space-between;
+}
 
-  #pond {
-    display: flex;
+#pond {
   flex-direction: row-reverse;
   justify-content: center;
   align-items: flex-end;
-  }
+}
 
 .yellow {
    order: 1;
@@ -88,35 +75,29 @@
 }
 
 #pond {
-  display: flex;
   flex-wrap: wrap;
 }
 
 #pond {
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
 #pond {
-  display: flex;
   flex-flow: column wrap;
 }
 
 #pond {
-  display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
 }
 
 #pond {
-  display: flex;
   flex-wrap: wrap;
   align-content: flex-end;
 }
 
 #pond {
-  display: flex;
   flex-wrap: wrap;
   flex-direction: column-reverse;
   align-content: center;
