@@ -1,0 +1,109 @@
+#water {
+   grid-column-start: 3;
+}
+
+#poison {
+   grid-column-start: 5;
+}
+
+#water {
+  grid-column-start: 1;
+  grid-column-end: 4
+}
+
+#water {
+  grid-column-start: 5;
+  grid-column-end: 2;
+}
+
+#water {
+  grid-column-start: 1;
+  grid-column-end: -2;
+}
+
+#poison {
+  grid-column-start: -3;
+}
+
+#water {
+  grid-column-start: 2;
+  grid-column-end: span 2;
+}
+
+#water {
+  grid-column-start: 1;
+  grid-column-end: span 5;
+}
+
+#water {
+  grid-column-start: span 3;
+  grid-column-end: 6;
+}
+
+#water {
+  grid-column: 4 / 6;
+}
+
+#water {
+  grid-column: 2 / 5;
+}
+
+#water {
+  grid-row-start: 3;
+}
+
+#water {
+  grid-row: 3 / 6;
+}
+
+#poison {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+#water {
+  grid-column: 2 / 6;
+  grid-row: 1 / 6
+}
+
+#water {
+  grid-area: 1 / 2 / 4 / 6;
+}
+
+#water-2 {
+  grid-area: 2 / 3 / 5 / 6;
+}
+
+#poison {
+  order: 4;
+}
+
+.poison {
+  order: -1;
+}
+
+
+grid-template-columns: repeat(3, 100px 3em 40%);
+
+
+grid-template-columns: 1fr 5fr;
+
+
+grid-template-columns: 50px 1fr 1fr 1fr 50px;
+
+
+grid-template-columns: 75px 3fr 2fr;
+
+
+grid-template-rows: 0fr 0fr 0fr 50px;
+
+
+grid-template: 60% / 200px;
+
+
+grid-template: 1fr 50px / 1fr 4fr;
+
+
+flex-flow:column-reverse wrap-reverse;
+justify-content: center;
+align-content: space-between;

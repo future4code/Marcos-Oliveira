@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+#header {
+    grid-template-columns: 10fr;
+    background-color: #2ECC40;
+}
