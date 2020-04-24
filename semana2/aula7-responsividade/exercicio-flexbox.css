@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    height: 1600px;
+}
+
+.listas {
+    width: 15%;
+    height: 1300px;
+}
+
+.listas fieldset {
+    border: none;
+    padding-left: 25px;
+}
+
+.listas p {
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    width: 85%;
+    height: 1300px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background: red;
+    justify-content: flex-start;
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6, .item9, .item10, .item11 {
+    display: flex;
+    width: 30%;
+    height: 140px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    background: blue;
+}
+
+.item2 {
+    background: yellow;
+}
+
+.item3 {
+    background: green;
+}
+
+.item4 {
+    background: blue;
+}
+
+.item5 {
+    background: yellow;
+}
+
+.item6 {
+    background: green;
+}
+
+.item7 {
+    display: flex;
+    width: 47%;
+    height: 280px;
+    background: black;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.item8 {
+    display: flex;
+    width: 47%;
+    height: 280px;
+    background: black;   
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .listas {
+        display: flex;
+        width: 15%;
+    }
+    .container {
+        display: flex;
+        width: 85%;
+    }
+    .item3, .item6, .item11 {
+        display: flex;
+        width: 97%;
+    }
+
+    .item1, .item2, .item4, .item5, .item9, .item10 {
+        display: flex;
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11 {
+        display: flex;
+        width: 95%;
+        height: 95px;
+    }
+    .listas {
+        display: none;
+    }
+}
+    
