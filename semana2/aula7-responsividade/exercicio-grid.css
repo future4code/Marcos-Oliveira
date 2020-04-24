@@ -18,8 +18,8 @@
 .item1 {
     display: grid;
     grid-column-start: 1; 
-    grid-column-end: 3;
-    width: 30%;
+
+    width: 80%;
     height: 140px;
     background: blue;
     border: 1px solid black;
@@ -27,9 +27,9 @@
 
 .item2 {
     display: grid;
-    grid-column-start: 1; 
-    grid-column-end: 3;
-    width: 30%;
+    grid-column-start: 2; 
+    
+    width: 80%;
     height: 140px;
     background: yellow;
     border: 1px solid black;
@@ -37,8 +37,75 @@
 
 .item3 {
     display: grid;
-    width: 30%;
+    grid-column-start: 3; 
+    width: 80%;
     height: 140px;
     background: green;
+    border: 1px solid black;
+}
+
+.item4 {
+    display: grid;
+    grid-column-start: 1; 
+    width: 80%;
+    height: 140px;
+    background: blue;
+    border: 1px solid black;
+}
+
+.item5 {
+    display: grid;
+    grid-column-start: 2; 
+    width: 80%;
+    height: 140px;
+    background: yellow;
+    border: 1px solid black;
+}
+
+.item6 {
+    display: grid;
+    grid-column-start: 3; 
+    width: 80%;
+    height: 140px;
+    background: green;
+    border: 1px solid black;
+}
+
+.item7 {
+    display: grid;
+    width: 80%;
+    height: 280px;
+    background: black;
+    border: 1px solid black;
+    color: white;
+}
+
+.item8 {
+    display: grid;
+    width: 80%;
+    height: 280px;
+    background: black;   
+    border: 1px solid black;
+    color: white;
+}
+
+.item9 {
+    display: grid;
+    width: 80%;
+    height: 140px;
+    border: 1px solid black;
+}
+
+.item10 {
+    display: grid;
+    width: 80%;
+    height: 140px;
+    border: 1px solid black;
+}
+
+.item11 {
+    display: grid;
+    width: 80%;
+    height: 140px;
     border: 1px solid black;
 }
