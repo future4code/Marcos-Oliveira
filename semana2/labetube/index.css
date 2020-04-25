@@ -51,10 +51,32 @@ section figure figcaption {
 
 footer {
     display: flex;
+    align-items: center;
+    align-content: flex-end;
     height: 80px;
     font-size: 30px;
-    align-items: center;
     color: white;
     padding-left: 10px;
     background-color: #363636;
+}
+
+@media screen and (max-width: 1085px) {
+    section {
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    section {
+        height: 1050px;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    section {
+        height: 1994px;
+    }
+    footer {
+        font-size: 20px;
+    }
 }
