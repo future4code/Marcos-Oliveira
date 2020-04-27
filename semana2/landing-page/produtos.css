@@ -72,10 +72,9 @@ section article figure figcaption {
     }
 
     .food {
+        align-items: flex-end;
         width: 150px;
         height: 150px;
         border-radius: 100px; 
-        margin-top: 20px;
-        margin-left: 80px;
     }
 }

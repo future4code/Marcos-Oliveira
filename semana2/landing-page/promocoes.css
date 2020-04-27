@@ -21,14 +21,14 @@ main h2 {
     text-shadow: 3px 1px black;
 }
 
-article {
+section {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-article fieldset {
+section fieldset {
     width: 30%;
     background-color: white;
     border: 1px solid black;
@@ -37,7 +37,7 @@ article fieldset {
     margin-bottom: 100px;
 }
 
-article fieldset p {
+section fieldset p {
     font-family: 'Bangers', cursive;
     font-size: 40px;
     font-weight: bold;
@@ -51,12 +51,12 @@ article fieldset p {
 }
 
 @media screen and (max-width: 667px) {
-    article fieldset {
+    section fieldset {
         width: 80%;
         margin-bottom: 150px;
     }
     
-    article fieldset p {
+    section fieldset p {
         font-size: 40px;
     }
 
