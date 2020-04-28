@@ -1,0 +1,25 @@
+/*const primeiro = prompt("Digite primeiro número");
+const segundo = prompt("Digite segundo número");
+
+let numero1 = Number(primeiroNumero); // para não ficar fazendo cast toda hora
+
+let resp1 = Number(primeiro) === Number(segundo); 
+let resp2 = Number(primeiro) !== Number(segundo);
+let resp3 = Number(primeiro) > Number(segundo);
+let resp4 = Number(primeiro) < Number(segundo);
+
+console.log(`Primeiro é igual ao Segundo? ${resp1}`); // pode usar crase para concatenar variavel
+console.log("Primeiro é diferente do Segundo?", resp2);
+console.log("Primeiro é maior que o Segundo?", resp3);
+console.log("Primeiro é menor que o Segundo?", resp4); 
+
+let condicao = true;
+let condicao2 = true;
+
+if (condicao) {
+    console.log('Entrei no if 1');
+}
+
+if (condicao2) {
+    console.log('Entrei no if 2');
+}*/
