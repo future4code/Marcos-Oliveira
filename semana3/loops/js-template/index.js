@@ -96,5 +96,61 @@ c. numero = 3 => [12,15,18,21,27,30]
 
   // DESAFIO 2
 
-  const numEscolhido = prompt("Escolha um número");
-  prompt("Vamos Jogar?")
+  /*const numEscolhido = prompt("Escolha um número");
+  let boolean = false;
+  numTentativa = 0;
+
+  console.log("Vamos Jogar?");
+  
+  for (i = 0; boolean === false; i++) {
+      let numero = prompt("Digite um número para tentar acertar")
+      numTentativa += 1;
+      if (numero !== numEscolhido) {
+        boolean = false;  
+        console.log("O número digitado foi: " , numero);
+            if (numero > numEscolhido) {
+                console.log("Errrrrou, é menor");
+            } else if (numero < numEscolhido) {
+                console.log("Errrrrou, é maior");
+            }
+      } else {
+          console.log("Acertou!!!");
+          console.log("O número de tentativas foi: ", numTentativa);
+          boolean = true;
+      }
+    
+  }*/
+    
+
+
+  // DESAFIO 3
+  
+  const sorteio = Math.floor(Math.random() * 100 + 1);
+  const numSorteado = Number(sorteio);
+  let boolean = false;
+  numTentativa = 0;
+
+  console.log("Vamos Jogar?");
+  
+  for (i = 0; boolean === false; i++) {
+    let numero = Number(prompt("Digite um número para tentar acertar"));
+    numTentativa += 1;
+      if (numero !== numSorteado) {
+        boolean = false;  
+        console.log("O número digitado foi: " , numero);
+            if (numero > numSorteado) {
+                console.log("Errrrrou, é menor");
+            } else if (numero < numSorteado) {
+                console.log("Errrrrou, é maior");
+            }
+      } else {
+          console.log("Acertou!!!");
+          console.log("O número de tentativas foi: ", numTentativa);
+          boolean = true;
+      }
+  }
+
+  /*Não foi difícil encontrar o código para usar números aleatórios, uma rápida pesquisa no 
+    Google e já encontrei a solução; como você faz a pesquisa para encontrar a solução para 
+    resolver um problema ou entender uma mensagem de erro é o diferencial.  
+  */
