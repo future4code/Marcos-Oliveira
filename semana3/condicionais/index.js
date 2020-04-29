@@ -129,93 +129,95 @@ const etapa = prompt("Etapa do jogo - SF/DT/FI");
 const categoria = prompt("Categoria - 1/2/3/4");
 const quantidade = prompt("Quantidade de ingressos"); 
 let qtd = Number(quantidade);
+let valor = 0;
+let valorIng = 0;
 
 if (tipo === "DO") {
     if (etapa === "SF") {
-        if (categoria === 1) {
-            let valor = (qtd * 1320);
-            let valorIng = 1320;  
-        } else if (categoria === 2) {
-            let valor = (qtd * 880);
-            let valorIng = 880;
-        } else if (categoria === 3) {
-            let valor = (qtd * 550);
-            let valorIng = 550;
-        } else if (categoria === 4) {
-            let valor = (qtd * 220);
-            let valorIng = 220;
+        if (categoria == 1) {
+            valor = (qtd * 1320);
+            valorIng = 1320;             
+        } else if (categoria == 2) {
+            valor = (qtd * 880);
+            valorIng = 880;
+        } else if (categoria == 3) {
+            valor = (qtd * 550);
+            valorIng = 550;
+        } else if (categoria == 4) {
+            valor = (qtd * 220);
+            valorIng = 220;
         }  
     } else if (etapa === "DT") {
-        if (categoria === 1) {
-            let valor = (qtd * 660); 
-            let valorIng = 660;
-        } else if (categoria === 2) {
-            let valor = (qtd * 440);
-            let valorIng = 440;
-        } else if (categoria === 3) {
-            let valor = (qtd * 330);
-            let valorIng = 330;
-        } else if (categoria === 4) {
-            let valor = (qtd * 170);
-            let valorIng = 170;
+        if (categoria == 1) {
+            valor = (qtd * 660); 
+            valorIng = 660;
+        } else if (categoria == 2) {
+            valor = (qtd * 440);
+            valorIng = 440;
+        } else if (categoria == 3) {
+            valor = (qtd * 330);
+            valorIng = 330;
+        } else if (categoria == 4) {
+            valor = (qtd * 170);
+            valorIng = 170;
         }
     } else if (etapa === "FI") {
-        if (categoria === 1) {
-            let valor = (qtd * 1980);
-            let valorIng = 1980; 
-        } else if (categoria === 2) {
-            let valor = (qtd * 1320);
-            let valorIng = 1320;
-        } else if (categoria === 3) {
-            let valor = (qtd * 880);
-            let valorIng = 880;
-        } else if (categoria === 4) {
-            let valor = (qtd * 330);
-            let valorIng = 330;
+        if (categoria == 1) {
+            valor = (qtd * 1980);
+            valorIng = 1980; 
+        } else if (categoria == 2) {
+            valor = (qtd * 1320);
+            valorIng = 1320;
+        } else if (categoria == 3) {
+            valor = (qtd * 880);
+            valorIng = 880;
+        } else if (categoria == 4) {
+            valor = (qtd * 330);
+            valorIng = 330;
         }
     }
 } else if (tipo === "IN") {
     if (etapa === "SF") {
-        if (categoria === 1) {
-            let valor = ((qtd * 1320) * 4.1);
-            let valorIng = 1320; 
-        } else if (categoria === 2) {
-            let valor = ((qtd * 880) * 4.1);
-            let valorIng = 880;
-        } else if (categoria === 3) {
-            let valor = ((qtd * 550) * 4.1);
-            let valorIng = 550;
-        } else if (categoria === 4) {
-            let valor = ((qtd * 220) * 4.1);
-            let valorIng = 220;
+        if (categoria == 1) {
+            valor = ((qtd * 1320) * 4.1);
+            valorIng = 1320; 
+        } else if (categoria == 2) {
+            valor = ((qtd * 880) * 4.1);
+            valorIng = 880;
+        } else if (categoria == 3) {
+            valor = ((qtd * 550) * 4.1);
+            valorIng = 550;
+        } else if (categoria == 4) {
+            valor = ((qtd * 220) * 4.1);
+            valorIng = 220;
         }
     } else if (etapa === "DT") {
-        if (categoria === 1) {
-            let valor = ((qtd * 660) * 4.1); 
-            let valorIng = 660;
-        } else if (categoria === 2) {
-            let valor = ((qtd * 440) * 4.1);
-            let valorIng = 440;
-        } else if (categoria === 3) {
-            let valor = ((qtd * 330) * 4.1);
-            let valorIng = 330;
-        } else if (categoria === 4) {
-            let valor = ((qtd * 170) * 4.1);
-            let valorIng = 170;
+        if (categoria == 1) {
+            valor = ((qtd * 660) * 4.1); 
+            valorIng = 660;
+        } else if (categoria == 2) {
+            valor = ((qtd * 440) * 4.1);
+            valorIng = 440;
+        } else if (categoria == 3) {
+            valor = ((qtd * 330) * 4.1);
+            valorIng = 330;
+        } else if (categoria == 4) {
+            valor = ((qtd * 170) * 4.1);
+            valorIng = 170;
         }
     } else if (etapa === "FI") {
-        if (categoria === 1) {
-            let valor = ((qtd * 1980) * 4.1);
-            let valorIng = 1980; 
-        } else if (categoria === 2) {
-            let valor = ((qtd * 1320) * 4.1);
-            let valorIng = 1320;
-        } else if (categoria === 3) {
-            let valor = ((qtd * 880) * 4.1);
-            let valorIng = 880;
-        } else if (categoria === 4) {
-            let valor = ((qtd * 330) * 4.1);
-            let valorIng = 330;
+        if (categoria == 1) {
+            valor = ((qtd * 1980) * 4.1);
+            valorIng = 1980; 
+        } else if (categoria == 2) {
+            valor = ((qtd * 1320) * 4.1);
+            valorIng = 1320;
+        } else if (categoria == 3) {
+            valor = ((qtd * 880) * 4.1);
+            valorIng = 880;
+        } else if (categoria == 4) {
+            valor = ((qtd * 330) * 4.1);
+            valorIng = 330;
         }
     }
 }
@@ -227,8 +229,8 @@ console.log("Etapa do jogo: " + etapa);
 console.log("Categoria: " + categoria);
 console.log("Quantidade de ingressos: " + qtd);
 console.log("---Valores---");
-console.log("Valor do ingresso: " + valorIng);
-console.log("Valor total: " + valor);   
+console.log("Valor do ingresso: R$ " + valorIng);
+console.log("Valor total: R$ " + valor);   
 
 
 
