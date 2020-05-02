@@ -12,10 +12,8 @@
  */
 
  console.log("Bem vindo ao jogo de Blackjack!");
- let resp = true;
-
- 
- if (confirm("Quer iniciar uma nova rodada?")) {
+  
+ if (confirm("Quer iniciar uma rodada?")) {
    const carta1 = comprarCarta();
    const carta2 = comprarCarta();
    const carta3 = comprarCarta();

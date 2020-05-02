@@ -12,56 +12,76 @@
  */
 
 
-if (confirm("Quer iniciar uma nova rodada?")) {
-   const carta1 = comprarCarta();
-   const carta2 = comprarCarta();
-   const carta3 = comprarCarta();
-   const carta4 = comprarCarta();
+ // JOGO ONDE O USUÁRIO PODE COMPRAR MAIS DE DUAS CARTAS, E O COMPUTADOR JOGA COM APENAS DUAS.
 
-   if((carta1.texto === "A" && carta2.texto === "A") || (carta3.texto === "A" && carta4.texto === "A")) { // Exercício 8
-      carta1 = comprarCarta();
-      carta2 = comprarCarta();
-      carta3 = comprarCarta();
-      carta4 = comprarCarta();
-   } else {
+ 
 
-      let pontUsuario = carta1.valor + carta2.valor;
-      let usuarioT = carta1.texto + " " + carta2.texto + " ";
+let pontUsuario;
+let pontComputador;
+let usuarioT = " ";
+let computadorT = " ";
+
+if (confirm("Bem vindo ao jogo Blackjack !!!" +  "\n" + "Deseja iniciar uma rodada?")) {
+   
+   let carta1 = comprarCarta();
+   let carta2 = comprarCarta();
+   let carta3 = comprarCarta();
+   let carta4 = comprarCarta();
+
+   if((carta1.numero === "A" && carta2.numero === "A") || (carta3.numero === "A" && carta4.numero === "A")) {    
       
-      let pontComputador = carta3.valor + carta4.valor;
-      let computadorT = carta3.texto + " " + carta4.texto;
-
-      if (confirm("Suas cartas são " + usuarioT + ". A carta revelada do computador é " 
-                  + carta3.valor + "\n" + "Deseja comprar mais uma carta?")) {
-         let novaCarta = comprarCarta();
-         pontUsuario += novaCarta.valor;
-         usuarioT += novaCarta.texto;
-         if (pontUsuario > 21) {
-            alert("Suas cartas são " + usuarioT + ". Sua pontuação é "+ pontUsuario + "\n" 
-                  + "As cartas do computador são " + computadorT + ". A pontuação do computador é " + pontComputador); 
-         }
-
-
-      } else {
-
-      }
-         
-
-
-
-
-
-
-
-
-      if (pontUsuario > pontComputador) {
-         console.log("O usuário ganhou!");
-      } else if (pontUsuario < pontComputador) {
-         console.log("O computador ganhou!")
-      } else {
-         console.log("Empate!")
+      for(;(carta1.numero !== "A" || carta2.numero !== "A") && (carta3.numero !== "A" || carta4.numero !== "A");) {
+         carta1 = comprarCarta();
+         carta2 = comprarCarta();
+         carta3 = comprarCarta();           // Se as duas cartas sorteadas forem "A", um novo sorteio é feito          
+         carta4 = comprarCarta();
       }
    }
- } else {
-    console.log("O jogo acabou");
- }
+
+   let pontUsuario = carta1.valor + carta2.valor;
+   let usuarioT = carta1.texto + " " + carta2.texto;
+         
+   let pontComputador = carta3.valor + carta4.valor;
+   let computadorT = carta3.texto + " " + carta4.texto;
+
+   let pergunta = (confirm("Suas cartas são " + usuarioT + ". A carta revelada do computador é " 
+                           + carta3.texto + "\n" + "Deseja comprar mais uma carta?"));
+
+   for (;((pontUsuario < 21) && (pergunta === true));) {       // Se o usuário quiser comprar mais cartas, irá entrar
+      const novaCarta = comprarCarta();                        //no 'for', e se a pontuação do usuário for menor que 21 
+      pontUsuario += novaCarta.valor;                          //ou não quiser comprar mais cartas, sairá do loop.
+      usuarioT += " " + novaCarta.texto;
+      pergunta = (confirm("Suas cartas são " + usuarioT + ". A carta revelada do computador é " 
+                          + carta3.texto + "\n" + "Deseja comprar mais uma carta?"));
+   }
+
+   if (pontUsuario > 21) {
+      alert("Suas cartas são " + usuarioT + ". Sua pontuação é " + pontUsuario + "\n" 
+            + "As cartas do computador são " + computadorT + ". A pontuação do computador é " 
+            + pontComputador + "\n" + "O computador ganhou!");
+
+   } else if ((pontUsuario === 21) && (pontComputador < 21)) {
+      alert("Suas cartas são " + usuarioT + ". Sua pontuação é " + pontUsuario + "\n" 
+            + "As cartas do computador são " + computadorT + ". A pontuação do computador é " 
+            + pontComputador + "\n" + "O usuário ganhou!");                                     // É feito a comparação das pontuações para exibir a mensagem 
+                                                                                                //de quem venceu (usuário ou computador) ou se deu empate
+   } else if (pontUsuario === pontComputador) {
+      alert("Suas cartas são " + usuarioT + ". Sua pontuação é "+ pontUsuario + "\n" 
+               + "As cartas do computador são " + computadorT + ". A pontuação do computador é " 
+               + pontComputador + "\n" + "Empatou!");
+
+   } else if (pontUsuario > pontComputador) {   
+      alert("Suas cartas são " + usuarioT + ". Sua pontuação é "+ pontUsuario + "\n" 
+            + "As cartas do computador são " + computadorT + ". A pontuação do computador é " 
+            + pontComputador + "\n" + "O usuário ganhou");
+
+   } else if (pontUsuario < pontComputador) {   
+      alert("Suas cartas são " + usuarioT + ". Sua pontuação é "+ pontUsuario + "\n" 
+            + "As cartas do computador são " + computadorT + ". A pontuação do computador é " 
+            + pontComputador + "\n" + "O computador ganhou");
+   }   
+
+} else {
+   alert("Jogo encerrado");
+}
+
