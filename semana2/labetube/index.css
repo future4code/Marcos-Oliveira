@@ -22,6 +22,7 @@ header {
 header h1 {
     display: flex;
     padding-left: 10px;
+    text-shadow: white 2px 1px;
 }
 
 header input {
@@ -41,11 +42,13 @@ section {
 }
 
 section video {
+    width: 300px;
+    height: 220px;
     flex-direction: row;
     border: 1px solid black;
 }
 
-section figure figcaption {
+section article figcaption {
     font-size: 20px;
 }
 
@@ -60,22 +63,39 @@ footer {
     background-color: #363636;
 }
 
-@media screen and (max-width: 1085px) {
+@media screen and (max-width: 1210px) {
+    main {
+        width: 100%;
+    }
+    
     section {
         height: 900px;
     }
 }
 
 @media screen and (max-width: 905px) {
+    main {
+        width: 100%;
+    }
+
     section {
         height: 1050px;
     }
 }
 
 @media screen and (max-width: 605px) {
-    section {
-        height: 1994px;
+    main {
+        width: 100%;
     }
+    
+    section {
+        height: 2080px;
+    }
+
+    section article figcaption {
+        padding-bottom: 10px;
+    }
+
     footer {
         font-size: 20px;
     }
