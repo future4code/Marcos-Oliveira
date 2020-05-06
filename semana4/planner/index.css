@@ -23,6 +23,7 @@ main {
     font-family: Arial, Helvetica, sans-serif;
     padding: 30px;
     font-size: 30px;
+    text-shadow: 2px 1px black;
 }
 
 .cabecalho article {
@@ -31,11 +32,12 @@ main {
     align-items: center;
 }
 
-.cabecalho article p {
+.cabecalho article label {
     font-size: 20px;
     color: white;
     font-family: sans-serif;
     padding-right: 5px;
+    text-shadow: 2px 1px black;
 }
 
 .cabecalho article input {
@@ -60,6 +62,18 @@ main {
 
 .corpo article p {
     font-family: sans-serif;
+    font-size: 20px;
     color: white;
     font-weight: bold;
+    text-shadow: 2px 1px black;
+}
+
+.corpo ul {
+    padding-top: 30px;
+}
+
+.corpo li {
+    color: white;
+    font-family: sans-serif;
+    text-shadow: 2px 1px black;
 }
