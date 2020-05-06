@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+        <section class="container">
+            <article class="cabecalho">
+                <h1>MINHA SEMANA</h1>
+                <article>
+                    <label>Nova Tarefa: <input id="tarefa" type="text"/></label>
+                    <select id="dias">
+                        <option value="segunda">Segunda-Feira</option>
+                        <option value="terca">Terça-Feira</option>
+                        <option value="quarta">Quarta-Feira</option>
+                        <option value="quinta">Quinta-Feira</option>
+                        <option value="sexta">Sexta-Feira</option>
+                        <option value="sabado">Sábado</option>
+                        <option value="domingo">Domingo</option>
+                    </select>
+                    <button id="botaoTarefa" onclick="addTarefa()" >Criar Tarefa</button>
+                </article>
+            </article>
+            <article class="corpo">
+                <article>
+                    <p>Segunda</p>
+                    <ul id=tarefaSegunda></ul>
+                </article>
+                <article>
+                    <p>Terça</p>
+                    <ul id="tarefaTerca"></ul>
+                </article>
+                <article>
+                    <p>Quarta</p>
+                    <ul id="tarefaQuarta"></ul>
+                </article>
+                <article>
+                    <p>Quinta</p>
+                    <ul id="tarefaQuinta"></ul>
+                </article>
+                <article>
+                    <p>Sexta</p>
+                    <ul id="tarefaSexta"></ul>
+                </article>
+                <article>
+                    <p>Sábado</p>
+                    <ul id="tarefaSabado"></ul>
+                </article>
+                <article>
+                    <p>Domingo</p>
+                    <ul id="tarefaDomingo"></ul>
+                </article>
+            </article>
+        </section>
+    </main>
+    
+</body>
+</html>
