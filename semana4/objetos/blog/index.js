@@ -1,5 +1,18 @@
 
+const meuContainer = document.getElementById("container");
+const novaSection = document.createElement("section");
+
+meuContainer.appendChild(novaSection);
+novaSection.id = 'secaoPost';
+
 const arrayPost = [];
+
+function inserirPost() {
+    const postagemSection = document.getElementById("secaoPost");
+    postagemSection.innerHTML += "<label> Título: </label>" + "<span>" + arrayPost[arrayPost.length -1].titulo + "</span> <br>";
+    postagemSection.innerHTML += "<label> Autor: </label>" +  "<span>" + arrayPost[arrayPost.length -1].autor + "</span> <br>";
+    postagemSection.innerHTML += "<label> Conteúdo: </label>" + "<span>" + arrayPost[arrayPost.length -1].conteudo + "</span> <br><br>";
+}
 
 function post() {
 
@@ -17,22 +30,13 @@ function post() {
         conteudo: conteudo
     }
 
-    const novaSection = document.createElement("section");
-    
+    arrayPost.push(conteudoPostado);
 
-
+    inserirPost();
 
     tituloPost.value = "";
     nomeAutor.value = "";
-    conteudoPost.value = "";
-
-    console.log(conteudoPostado);
-    arrayPost.push(conteudoPostado);
-    console.log(arrayPost);
+    conteudoPost.value = "";    
 
 }
-
-
-
-
 
