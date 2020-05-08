@@ -28,3 +28,96 @@
        é exibo no console o valor 1590.
 
 */
+
+
+
+
+
+// Exercícios de Lógica de Programação
+
+// 1. for - for of - forEach 
+
+/*const numeros = [3,4,5,6,7];
+let soma = 0;
+
+for (numero of numeros) {
+    soma += numero;
+}
+
+console.log(soma); */       
+
+
+// 2. 
+
+/* a) false
+   b) false
+   c) true
+   d) true
+   e) true     
+*/
+
+
+// 3. Este código não funciona, pois ele entra em um loop infinito porque a variável 'i'
+//    sempre vai ser menor que 'quantidadeDeNumerosPares' 
+
+// Código alterado para funcionar
+
+/* const quantidadeDeNumerosPares = 3;
+    let i = 0;
+    while(i <= (quantidadeDeNumerosPares + 1)) {
+        console.log(i);
+        i += 2;
+        quantidadeDeNumerosPares -1;
+    } 
+*/
+
+
+// 4.
+
+/* function triangulo (a, b , c) {
+      if (a === b && b === c)  {
+         console.log("Triângulo Equilátero");
+      } else if (a === b || a === c || b === c) {
+         console.log("Triângulo Isósceles");
+      } else {
+        console.log("Triângulo Escaleno");
+      }
+   }
+*/
+
+
+// 5 . 
+
+function numeros (valor1, valor2) {
+   
+    let resposta = "";
+    let resposta2 = "";
+
+    if (valor1 > valor2) {
+        const maior = valor1;
+        const diferenca = valor1 - valor2;
+    } else {
+        maior = valor2;
+        diferenca = valor2 - valor1;
+    }
+
+    if (valor1 % valor2 === 0) {
+        resposta = `${valor1} é divisível por ${valor2}`;
+    } else {
+        resposta = `${valor1} não é divisível por ${valor2}`;
+    }
+
+    if (valor2 % valor1 === 0) {
+        resposta2 = `${valor2} é divisível por ${valor1}`;
+    } else {
+        resposta2 = `${valor2} não é divisível por ${valor1}`;
+    }
+
+    console.log("O maior é: " + maior);
+    console.log(resposta);
+    console.log(resposta2);
+    console.log("A diferença entre eles é " + diferenca);
+
+}
+
+console.log(numeros(15, 30));
