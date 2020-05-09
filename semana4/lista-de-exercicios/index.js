@@ -162,8 +162,74 @@ console.log(soma); */
 
 // 2.
 
-const mensagem = () => {
+/* const mensagem = () => {
     return alert("Hello Labenu !!!");
+   }
+
+   console.log(mensagem());
+*/
+
+
+
+
+// Exercícios de Objetos
+
+
+/* 1. Os Objetos são estruturas de sintaxe que nos permitem representar dados mais complexos.
+      Utilizamos os objetos para facilitar a forma de idealizar os modelos do mundo real, assim  os objetos se tornam mais 
+      intuitivos/humanizados.
+
+      O Array armazena mais de uma informação em uma única variável. Utilizamos o Array para criar listas, e as informações 
+      serão armazenadas de uma forma ordenada.
+*/
+
+// 2. 
+
+/*
+function criaRetangulo(lado1, lado2) {
+
+    const objRetangulo = {
+        largura: lado1,
+        altura: lado2,
+        perimetro: (lado1 + lado2) * 2,
+        area: lado1 * lado2
+    }
+
+    return console.log(objRetangulo);
+    
 }
 
-console.log(mensagem());
+console.log(criaRetangulo(4, 4));
+*/
+
+// 3. 
+
+/*
+const filmeFavorito = {
+    titulo: 'Vingadores',
+    ano: 2012,
+    diretor: 'Joss Whedon',
+    atores: ['Robert Downey Jr.', 'Mark Ruffalo'],
+    atrizes: ['Scarlett Johansson', 'Cobie Smulders']
+}
+
+console.log("Venha assistir ao filme " + filmeFavorito.titulo + ", de " + filmeFavorito.ano + ", dirigido por " + 
+             filmeFavorito.diretor + " e estrelado por " + filmeFavorito.atores + "," + filmeFavorito.atrizes);
+*/
+
+// 4.
+
+const pessoa = {
+    nome: 'Ana Rosa',
+    idade: 25,
+    email: 'anarosa@outlook.com',
+    endereco: 'Rua Almeida Silva, nº 188 - Jardins - São Paulo'
+}
+
+const anonimizarPessoa = {
+    ...pessoa,
+    nome: 'ANÔNIMO'
+}
+
+console.log(anonimizarPessoa);
+console.log(pessoa);
