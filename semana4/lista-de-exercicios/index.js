@@ -88,36 +88,82 @@ console.log(soma); */
 
 // 5 . 
 
-function numeros (valor1, valor2) {
-   
-    let resposta = "";
-    let resposta2 = "";
+/*    function numeros (valor1, valor2) {
+    
+        let resposta = "";
+        let resposta2 = "";
 
-    if (valor1 > valor2) {
-        const maior = valor1;
-        const diferenca = valor1 - valor2;
-    } else {
-        maior = valor2;
-        diferenca = valor2 - valor1;
+        if (valor1 > valor2) {
+            const maior = valor1;
+            const diferenca = valor1 - valor2;
+        } else {
+            maior = valor2;
+            diferenca = valor2 - valor1;
+        }
+
+        if (valor1 % valor2 === 0) {
+            resposta = `${valor1} é divisível por ${valor2}`;
+        } else {
+            resposta = `${valor1} não é divisível por ${valor2}`;
+        }
+
+        if (valor2 % valor1 === 0) {
+            resposta2 = `${valor2} é divisível por ${valor1}`;
+        } else {
+            resposta2 = `${valor2} não é divisível por ${valor1}`;
+        }
+
+        console.log("O maior é: " + maior);
+        console.log(resposta);
+        console.log(resposta2);
+        console.log("A diferença entre eles é " + diferenca);
+
+    }
+*/
+
+
+
+
+// Exercícios de Funções
+
+// 1.
+
+/* function numeros() {
+
+    const lista = [99, 7, 10 , 4, 11, 16, 22, 31, 77, 88, 100];
+    let maior = lista[0];
+    let menor = lista[0];
+    let segundoMaior = 0;
+    let segundoMenor = 0;
+
+
+    for (numero of lista) {
+        if (numero > maior) {
+            segundoMaior = maior;
+            maior = numero;
+        }
     }
 
-    if (valor1 % valor2 === 0) {
-        resposta = `${valor1} é divisível por ${valor2}`;
-    } else {
-        resposta = `${valor1} não é divisível por ${valor2}`;
+    for (numero2 of lista) {
+        if (numero2 < menor) {
+            segundoMenor = menor;
+            menor = numero2;      
+        }
     }
 
-    if (valor2 % valor1 === 0) {
-        resposta2 = `${valor2} é divisível por ${valor1}`;
-    } else {
-        resposta2 = `${valor2} não é divisível por ${valor1}`;
-    }
+    console.log(lista);
+    console.log("Segundo maior número é " + segundoMaior);
+    console.log("Segundo menor número é " + segundoMenor);
+ }
 
-    console.log("O maior é: " + maior);
-    console.log(resposta);
-    console.log(resposta2);
-    console.log("A diferença entre eles é " + diferenca);
+ console.log(numeros());
+*/
 
+
+// 2.
+
+const mensagem = () => {
+    return alert("Hello Labenu !!!");
 }
 
-console.log(numeros(15, 30));
+console.log(mensagem());
