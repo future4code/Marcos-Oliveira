@@ -219,6 +219,7 @@ console.log("Venha assistir ao filme " + filmeFavorito.titulo + ", de " + filmeF
 
 // 4.
 
+/*
 const pessoa = {
     nome: 'Ana Rosa',
     idade: 25,
@@ -233,3 +234,173 @@ const anonimizarPessoa = {
 
 console.log(anonimizarPessoa);
 console.log(pessoa);
+*/
+
+
+
+
+// Exercícios de Funções de array
+
+// 1. 
+
+// a)
+
+/*
+const lista = [
+    {nome: "Pedro", idade: 20},
+    {nome: "João", idade: 10},
+    {nome: "Paula", idade: 12},
+    {nome: "Artur", idade: 89}
+]
+
+const adultos = lista.filter((adulto, index, array) => {
+    return adulto.idade >= 20;
+}) 
+
+console.log(adultos);
+*/
+
+
+// b.
+
+/*
+const criancaEAdolescente = lista.filter((adulto, index, array) => {
+    return adulto.idade < 20;
+}) 
+
+console.log(criancaEAdolescente);
+*/
+
+
+// 2. 
+
+// a)
+
+/*
+const arrayNumeros = [1,2,3,4,5,6];
+
+const numeros = arrayNumeros.map((numero, index, array) => {
+    return numero * 2; 
+})
+
+console.log(numeros);
+*/
+
+
+
+// b) 
+
+/*
+const arrayNumeros = [1,2,3,4,5,6];
+
+const numeros = arrayNumeros.map((numero, index, array) => {
+    return `${numero * 3}`;
+})
+
+console.log(numeros);
+*/
+
+// c)
+
+/*
+const arrayNumeros = [1,2,3,4,5,6];
+
+let numeros = arrayNumeros.map((numero, index, array) => {
+    if (numero % 2 === 0) {
+        return `${numero} é par`;
+    } else {
+        return `${numero} é ímpar`;
+    }
+})
+
+console.log(numeros);
+*/
+
+
+// 3. 
+
+// a)
+
+/*
+const pessoas = [
+	{ nome: "Paula", idade: 12, altura: 1.8},
+	{ nome: "João", idade: 20, altura: 1.3},
+	{ nome: "Pedro", idade: 15, altura: 1.9},
+	{ nome: "Luciano", idade: 22, altura: 1.8},
+	{ nome: "Artur", idade: 10, altura: 1.2},
+	{ nome: "Soter", idade: 70, altura: 1.9}
+]
+
+const permissao = pessoas.filter((permitido, index, array) => {
+    return ((permitido.altura >= 1.5) && (permitido.idade > 14) && (permitido.idade < 60));
+})
+
+console.log(permissao);
+*/
+
+
+// b)
+
+/*
+const pessoas = [
+	{ nome: "Paula", idade: 12, altura: 1.8},
+	{ nome: "João", idade: 20, altura: 1.3},
+	{ nome: "Pedro", idade: 15, altura: 1.9},
+	{ nome: "Luciano", idade: 22, altura: 1.8},
+	{ nome: "Artur", idade: 10, altura: 1.2},
+	{ nome: "Soter", idade: 70, altura: 1.9}
+]
+
+const naoPermitidos = pessoas.filter((permitido, index, array) => {
+    return ((permitido.altura < 1.5) || (permitido.idade < 14) || (permitido.idade > 60));     
+})
+
+console.log(naoPermitidos);
+*/
+
+
+// 4.
+
+/*
+let emails = [];
+
+const consultas = [
+	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+]
+
+consultas.forEach((email, index, array) => {
+    if (email.cancelada === true) {
+        emails.push(`Olá Sr./Sra. ${email.nome}. Infelizmente, sua consulta marcada para o dia ${email.dataDaConsulta} 
+                     foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la `);
+    } else {
+        emails.push(`Olá Sr./Sra. ${email.nome}. Estamos enviando esta mensagem para lembrá-lo/lembrá-la da sua consulta 
+                     no dia ${email.dataDaConsulta}. Por favor, acuse o recebimento deste email.`);
+    }
+})
+
+console.log(emails);
+*/
+
+// 5.
+
+/*
+const contas = [
+	{ cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+	{ cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+	{ cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+	{ cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+	{ cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+	{ cliente: "Soter", saldoTotal: 1200, compras: [] }
+]
+
+contas.forEach((conta, index, array) => {
+    for (let valor of conta.compras) {
+        conta.saldoTotal -= valor;
+    }
+})
+
+console.log(contas);
+*/
