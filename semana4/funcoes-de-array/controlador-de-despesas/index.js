@@ -82,7 +82,7 @@ function cadastrar() {
 const valorMinimo = document.getElementById("valorMinimo");
 const valorMaximo = document.getElementById("valorMaximo");
 const tipoConsulta = document.getElementById("tipoDespesaDetalhada");
-let despesaCasa = Number(0);
+let despesaCasa = 0;
 let despesaViagem = 0;
 let despesaAlimentacao = 0;
 let despesaTransporte = 0;
