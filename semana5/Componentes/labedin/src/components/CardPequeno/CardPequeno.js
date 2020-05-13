@@ -4,9 +4,10 @@ import './CardPequeno.css'
 function CardPequeno(props) {
     return (
         <div className="littlecard-container">
+            <img src={ props.imagem } />
             <div>
-                <p>{ props.endereco }</p>
-                <p>{ props.email }</p>
+                <span>{ props.span }</span>
+                <p>{ props.descricao }</p>
             </div>
         </div>
     )

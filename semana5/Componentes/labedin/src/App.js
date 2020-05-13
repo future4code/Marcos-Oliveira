@@ -3,6 +3,8 @@ import './App.css';
 import foto from './Imagens/Image.jpeg';
 import manutencao from './Imagens/computadores.png';
 import onbyte from './Imagens/onbyte.png';
+import email from './Imagens/email.png';
+import endereco from './Imagens/endereco.png';
 import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
 import CardPequeno from './components/CardPequeno/CardPequeno';
@@ -25,6 +27,20 @@ function App() {
       </div>
 
       <div className="page-section-container">
+        <CardPequeno 
+          imagem={email}
+          span="Email: "
+          descricao="marcosoliveira@outlook.com" 
+        />
+        
+        <CardPequeno 
+          imagem={endereco}
+          span="Endereço: "
+          descricao="Rua Santos Dumont" 
+        />
+      </div>
+
+      <div className="page-section-container">
         <h2>Experiências profissionais</h2>
         <CardGrande 
           imagem={manutencao} 
@@ -36,14 +52,6 @@ function App() {
           imagem={onbyte} 
           nome="Onbyte" 
           descricao="Instrutor de cursos interativos." 
-        />
-      </div>
-
-      <div className="page-section-container">
-        <h2>Contato</h2>
-        <CardPequeno  
-          endereco="Rua Santos Dumont" 
-          email="marcosoliveira@outlook.com" 
         />
       </div>
 
