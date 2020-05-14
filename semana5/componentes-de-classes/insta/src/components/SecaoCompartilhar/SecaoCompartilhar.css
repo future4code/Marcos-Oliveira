@@ -1,0 +1,25 @@
+.compartilhar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.compartilhar-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.compartilhar-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.input-mensagem {
+    width: 95%;
+    margin-top: 10px;
+    padding: 3px;
+}

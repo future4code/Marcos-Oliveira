@@ -56,6 +56,14 @@ function App() {
       </div>
 
       <div className="page-section-container">
+        <h2>Contato</h2>
+        <CardPequeno  
+          endereco="Rua Santos Dumont" 
+          email="marcosoliveira@outlook.com" 
+        />
+      </div>
+
+      <div className="page-section-container">
         <h2>Minhas redes sociais</h2>
         <ImagemButton 
           imagem="https://d2v9ipibika81v.cloudfront.net/uploads/sites/261/2017/01/facebook-logo-3.png" 

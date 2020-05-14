@@ -15,6 +15,7 @@
 
 .littlecard-container > div > span {
     font-weight: bold;
+    height: 150px;
 }
 
 .littlecard-container > div {

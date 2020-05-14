@@ -8,6 +8,9 @@ function CardPequeno(props) {
             <div>
                 <span>{ props.span }</span>
                 <p>{ props.descricao }</p>
+            <div>
+                <p>{ props.endereco }</p>
+                <p>{ props.email }</p>
             </div>
         </div>
     )
