@@ -3,6 +3,8 @@ import './App.css';
 import foto from './Imagens/Image.jpeg';
 import manutencao from './Imagens/computadores.png';
 import onbyte from './Imagens/onbyte.png';
+import email from './Imagens/email.png';
+import endereco from './Imagens/endereco.png';
 import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
 import CardPequeno from './components/CardPequeno/CardPequeno';
@@ -21,6 +23,20 @@ function App() {
         <ImagemButton 
           imagem="https://image.flaticon.com/icons/png/512/117/117472.png" 
           texto="Ver mais"
+        />
+      </div>
+
+      <div className="page-section-container">
+        <CardPequeno 
+          imagem={email}
+          span="Email: "
+          descricao="marcosoliveira@outlook.com" 
+        />
+        
+        <CardPequeno 
+          imagem={endereco}
+          span="Endereço: "
+          descricao="Rua Santos Dumont" 
         />
       </div>
 
