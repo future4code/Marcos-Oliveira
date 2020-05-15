@@ -34,35 +34,34 @@ class App extends React.Component {
         nomeUsuario:"Amanda",
         fotoUsuario: "https://picsum.photos/50/52",
         fotoPost: "https://picsum.photos/200/152"
-      }
-    ]
+      },
+    ],
+
+    inputNomeUsuario: "",
+    inputFotoUsuario: "",
+    inputFotoPost: "",
   }
 
   adicionaPost = () => {
     const novoPost = {
-      
-      novoUsuario: this.state.InputNomeUsuario,
-      novoFoto: this.state.InputFotoUsuario,
-      novoPosts: this.state.InputFotoPost
-    
+      nomeUsuario: this.state.inputNomeUsuario,
+      fotoUsuario: this.state.inputFotoUsuario,
+      fotoPost: this.state.inputFotoPost
     }
-
     const novaPost = [...this.state.posts, novoPost]
-
     this.setState({posts: novaPost})
-
   }
 
   onChangeInputNomeUsuario = (event) => {
-    this.setState({ InputNomeUsuario: event.target.value })
+    this.setState({ inputNomeUsuario: event.target.value })
   }
 
   onChangeInputFotoUsuario = (event) => {
-    this.setState({ InputFotoUsuario: event.target.value })
+    this.setState({ inputFotoUsuario: event.target.value })
   }
 
   onChangeInputFotoPost = (event) => {
-    this.setState({ InputFotoPost: event.target.value })
+    this.setState({ inputFotoPost: event.target.value })
   }
 
   render() {
@@ -83,25 +82,25 @@ class App extends React.Component {
       <div className={'app-container'}>
         <div>
           <CaixaDeTexto
-            value={this.state.InputNomeUsuario}
+            value={this.state.inputNomeUsuario}
             onChange={this.onChangeInputNomeUsuario}
             placeholder={"Nome do Usuário"}
           />
 
           <CaixaDeTexto
-            value={this.state.InputFotoUsuario}
+            value={this.state.inputFotoUsuario}
             onChange={this.onChangeInputFotoUsuario}
             placeholder={"URL da Foto do Usuário"}
           />
 
           <CaixaDeTexto
-            value={this.state.InputFotoPost}
+            value={this.state.inputFotoPost}
             onChange={this.onChangeInputFotoPost}
             placeholder={"URL da Foto do Post"}
           />
         </div>
 
-        <BotaoPost onClick={this.adicionaPost}>Adicionar Post </BotaoPost>
+        <BotaoPost onClick={this.adicionaPost}>Adicionar Post</BotaoPost>
 
         {listaDePosts}
 
