@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PerguntaAberta from './PerguntaAberta';
 
 const InfoEnsSup = styled.div `
   display: flex;
@@ -12,19 +13,14 @@ class Etapa2 extends React.Component {
 
   render() {
 
-  
-
     return (
       <InfoEnsSup>
         
         <h2>ETAPA 2 - INFORMAÇÕES DO ENSINO SUPERIOR</h2>
-        <div>
-            <p>5. Qual curso?</p>
-            <input />
-            <p>6. Qual a unidade de ensino?</p>
-            <input />
-        </div>
-        <button>Próxima etapa</button>
+        <PerguntaAberta pergunta={"5. Qual curso?"} />
+        <input />
+        <PerguntaAberta pergunta={"6. Qual a unidade de ensino?"} />
+        <input />
 
       </InfoEnsSup>
     );
