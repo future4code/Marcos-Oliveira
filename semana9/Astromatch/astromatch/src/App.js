@@ -18,6 +18,7 @@ const Button = styled.button `
   bottom: 5px;
   padding: 5px;
   border-radius: 14px;
+  outline: none;
 `
 
 const App = props => {

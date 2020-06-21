@@ -1,52 +1,8 @@
 import React, { useState ,useEffect } from 'react';
 import axios from 'axios';
-import styled from 'styled-components';
+import {Container, Header, MatchContainer, ImageProfile, Info, HomeScreen, Loading} from './styleds'
 
-const Container = styled.div `
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  width: 65vh;
-  height: 45vw;
-  border: none;
-  border-radius: 20px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
-  margin-top: 20px;
-  background-color: white;
-`
-
-const Header = styled.div `
-  display: flex;
-  justify-content: space-around;
-  width: 425px;
-  height: 60px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #C0C0C0;
-
-  h3 {
-    font-size: 30px;
-    margin: auto 0;
-  }
-`
-
-const MatchContainer = styled.div `
-  display: flex;
-  flex-direction: row;
-  width: 400px;
-`
-
-const ImageProfile = styled.img `
-  width: 60px;
-  height: 60px;
-  border-radius: 80px;
-  padding: 15px 15px;
-`
-
-const Info = styled.div `
-  display: flex;
-  align-items: center;
-`
+import home from '../../imagens/home.png'
 
 const Matches = props => {
   const [showMatches, setShowMatches] = useState([])
@@ -61,13 +17,29 @@ const Matches = props => {
          })
   }, [])
 
+  const renderContent = () => {
+    if (showMatches.length === 0) {
+      return <Loading>
+        <svg viewBox="0 0 48.000000 48.000000">
+          <g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)" fill="#A020F0">
+            <path d="M123 413 c-31 -6 -70 -48 -77 -84 -10 -51 25 -113 111 -195 43 -41
+                    80 -74 83 -74 3 0 40 33 83 74 116 110 141 189 81 250 -35 34 -80 40 -126 17
+                    -38 -18 -39 -18 -75 0 -21 11 -42 18 -48 18 -5 -1 -20 -4 -32 -6z"
+            />
+          </g>
+        </svg>
+      </Loading>
+    } 
+  }
+
   return (
     <Container>
       <Header>
         <h3>astromach</h3>
-        <button onClick={props.screen}>Match</button>
+        <HomeScreen src={home} onClick={props.screen} alt="Voltar home"/>
       </Header>
       <div>
+        {renderContent()}
         {showMatches.map(match => {
           return (
             <MatchContainer>
