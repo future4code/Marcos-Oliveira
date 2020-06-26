@@ -36,7 +36,7 @@ class ListaDeUsuario extends React.Component {
         }
       }) 
   
-      this.setState({usuarios: resposta.data})
+      this.setState({usuarios: resposta.data.results.list})
     } catch(erro) {
       alert(erro.resposta);
     }
