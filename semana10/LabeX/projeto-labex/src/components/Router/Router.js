@@ -16,7 +16,7 @@ const Router = () => {
           <Route exact path="/">
             <HomePage />
           </Route>
-          <Route exact path="/application-form/:tripId">
+          <Route exact path="/application-form">
             <FormPage />
           </Route>
           <Route exact path="/admin">

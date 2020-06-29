@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory, useParams } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Axios from 'axios';
 import styled from 'styled-components';
 
@@ -52,7 +52,7 @@ const useForm = initialValues => {
 
 const FormPage = () => {
   const [listTrips, setListTrips] = useState([])
-  const { tripId } = useParams();
+  const [catchId, setCatchId] = useState("")
 
   const {form, onChange, resetForm} = useForm ({
     name: "",
@@ -74,6 +74,10 @@ const FormPage = () => {
       });
   }, [])
 
+  const handleSelect = (event) => {
+    setCatchId(event.target.value)
+  }
+
   const handleInputChange = event => {
     const {name, value} = event.target
 
@@ -84,7 +88,7 @@ const FormPage = () => {
     event.preventDefault()
 
     try {
-      await Axios.post(`https://us-central1-labenu-apis.cloudfunctions.net/labeX/marcos-oliveira-mello/trips/${tripId}/apply`,form)
+      await Axios.post(`https://us-central1-labenu-apis.cloudfunctions.net/labeX/marcos-oliveira-mello/trips/${catchId}/apply`,form)
       
     } catch (e) {
       alert("Erro ao se candidatar :(")
@@ -103,8 +107,8 @@ const FormPage = () => {
           <p>Escolha a viagem que deseja: 
             <select 
               name="trip" 
-              value={form.trip} 
-              onChange={handleInputChange}
+              value={catchId} 
+              onChange={handleSelect}
               required
             >
               <option value=""></option>

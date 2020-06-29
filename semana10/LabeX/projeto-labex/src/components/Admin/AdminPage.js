@@ -62,7 +62,9 @@ const AdminPage = () => {
     history.push("/trips/list")
   }
 
-  console.log(localStorage.token)
+  const goToTripDetailsPage = () => {
+    history.push("/trips/details")
+  }
 
   return (
     <AdminContainer>
@@ -73,7 +75,7 @@ const AdminPage = () => {
       <App>
         <button onClick={goToListTripsPage}>Listar Viagens</button>
         <button onClick={goToCreateTripPage}>Cadastrar Viagem</button>
-        <button>Lista de Candidatos</button>
+        <button onClick={goToTripDetailsPage}>Lista de Candidatos</button>
       </App>
     </AdminContainer>
   );

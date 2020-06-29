@@ -8,7 +8,7 @@ const ListTripsContainer = styled.div `
   background-color: #A020F0;
   flex-direction: column;
   align-content: flex-start;
-  height: 48vw;
+  height: 52vw;
 `
 
 const Header = styled.div `
@@ -27,8 +27,11 @@ const List = styled.div `
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
   padding: 10px;
+
+  label {
+    color: white;
+  }
 `
 
 const ListTripsPage = () => {
@@ -46,8 +49,6 @@ const ListTripsPage = () => {
         alert("Erro ao listar as viagens");
       });
   }, [])
-
-  console.log(listTrips)
 
   const handleLogout = () => {
     localStorage.clear()

@@ -49,7 +49,7 @@ const HomePage = () => {
   const [password, setPassword] = useState("")
 
   const goToFormPage = () => {
-    history.push("/application-form/:tripId")
+    history.push("/application-form")
   }
 
   useEffect(() => {

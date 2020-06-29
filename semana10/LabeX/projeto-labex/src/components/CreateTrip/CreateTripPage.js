@@ -106,8 +106,6 @@ const CreateTripPage = () => {
     history.push("/")
   }
 
-  console.log(form)
-
   return (
     <CreateTripContainer>
       <Header>
