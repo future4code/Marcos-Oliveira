@@ -1,60 +1,66 @@
 import React from 'react';
 import { render, wait } from '@testing-library/react';
-//import axios from 'axios;'
+import axios from 'axios';
 import userEvent from '@testing-library/user-event';
+import '@testing-library/jest-dom/extend-expect'
 import App from './App';
 
-describe('Renderizacao inicial', () => {
+describe("Renderização inicial", () => {
+  test("Renderiza tudo corretamente", async() => {
+    axios.get = jest.fn().mockResolvedValue({
+      data: [
+        {
+          "id": "sYLgZCjyXTwr3G9lqNIP",
+          "text": "Tarefa requisição teste",
+          "day": "sabado",
+        }
+      ]
+    })
+    
+    const { getByTestId, findByText } = render(<App />)
 
-  test('Renderiza tudo corretamente', async () => {
-    const utils = render(<App />)
-
-    const input = utils.getByLabelText('Nova Tarefa')
-    const select = utils.getByLabelText(/'dia'/i)
-    const button = utils.getByText('Criar Tarefa')
-
+    const input = getByTestId("inputTasks")
     expect(input).toBeInTheDocument()
-    expect(select).toBeInTheDocument()
-    expect(button).toBeInTheDocument()
-    expect(utils.getByText(/Domingo/i)).toBeInTheDocument()
+        
+    expect(getByTestId("selectTasks")).toBeInTheDocument()
+    expect(getByTestId("btnTask")).toBeInTheDocument()
+    expect(getByTestId("days")).toBeInTheDocument()
+    
+    const task = await findByText("Tarefa requisição teste")
+    expect(task).toBeInTheDocument()
 
+    expect(axios.get).toHaveBeenCalled() 
+    
   })
 })
 
-/*
-test('Cria a tarefa com sucesso', async () => {
-  axios.get = jest.fn().mockResolvedValue({
-    data: [
-      {
-        "id": "sYLgZCjyXTwr3G9lqNIP",
-        "texto": "tarefa teste",
-        "dia": "segunda"
-      }
-    ]
+describe("Criar uma tarefa", () => {
+  test("Cria uma tarefa com sucesso", async () => {
+    axios.get = jest.fn().mockResolvedValue({
+      data: [
+        {
+          "id": "sYLgZCjyXTwr3G9lqNIP",
+          "texto": "tarefa teste",
+          "dia": "segunda"
+        }
+      ]
+    })
+
+    const { getByTestId, getByText } = render(<App />)
+
+    const input = getByTestId("inputTasks")
+    await userEvent.type(input, "tarefa teste")
+    expect(input).toHaveValue("tarefa teste")
+
+    const select = getByTestId("selectTasks")
+    userEvent.selectOptions(select, getByText(/Segunda-Feira/i))
+    expect(getByText(/Segunda-Feira/i)).toBeInTheDocument()
+
+    const button = getByTestId("btnTask")
+    userEvent.click(button)
+
+    await wait(() => expect(axios.get).toHaveBeenCalledTimes(1))
   })
-
-  axios.post = jest.fn().mockResolvedValue()
-
-  const { getByLabelText, getByText } = render(<App />)
-
-  const input = getByLabelText('Nova Tarefa')
-  const select = getByLabelText(/'dia'/i)
-
-  await userEvent.type(input, 'tarefa teste')
-  userEvent.selectOptions(select, getByText(/'segunda'/i))
-
-  expect(input).toHaveValue('tarefa teste')
-  expect(select).toHaveValue('segunda')
-
-  const button = getByText(/Criar Tarefa/)
-  userEvent.click(button)
-
-  expect(axios.post).toHaveBeenCalledWith('https://us-central1-labenu-apis.cloudfunctions.net/generic/tarefas', {
-    texto: 'tarefa teste',
-    completa: false
-  })
-
-  await wait(() => expect(axios.get).toHaveBeenCalledTimes(2))
-  await wait(() => expect(input).toHaveValue(''))
 })
-*/
+
+

@@ -1,0 +1,316 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renderização inicial Renderiza tudo corretamente 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <main
+        class="sc-AxjAm bSjxOM"
+      >
+        <section
+          class="sc-AxirZ iqyMvK"
+        >
+          <div
+            class="sc-AxiKw kZUgMc"
+          >
+            <h1>
+              MINHA SEMANA
+            </h1>
+            <div
+              class="sc-AxhCb dFmymE"
+            >
+              <label>
+                Nova Tarefa:
+                <input
+                  data-testid="inputTasks"
+                  type="text"
+                  value=""
+                />
+              </label>
+              <label>
+                Escolha o dia:
+                <select
+                  data-testid="selectTasks"
+                >
+                  <option
+                    value=""
+                  />
+                  <option
+                    value="segunda"
+                  >
+                    Segunda-Feira
+                  </option>
+                  <option
+                    value="terca"
+                  >
+                    Terça-Feira
+                  </option>
+                  <option
+                    value="quarta"
+                  >
+                    Quarta-Feira
+                  </option>
+                  <option
+                    value="quinta"
+                  >
+                    Quinta-Feira
+                  </option>
+                  <option
+                    value="sexta"
+                  >
+                    Sexta-Feira
+                  </option>
+                  <option
+                    value="sabado"
+                  >
+                    Sábado
+                  </option>
+                  <option
+                    value="domingo"
+                  >
+                    Domingo
+                  </option>
+                </select>
+              </label>
+              <button
+                data-testid="btnTask"
+              >
+                Criar Tarefa
+              </button>
+            </div>
+          </div>
+          <div
+            class="sc-AxhUy ejHdMV"
+          >
+            <article>
+              <p>
+                Segunda
+              </p>
+              <ul />
+            </article>
+            <article>
+              <p>
+                Terça
+              </p>
+              <ul />
+            </article>
+            <article>
+              <p>
+                Quarta
+              </p>
+              <ul />
+            </article>
+            <article>
+              <p>
+                Quinta
+              </p>
+              <ul />
+            </article>
+            <article>
+              <p>
+                Sexta
+              </p>
+              <ul />
+            </article>
+            <article>
+              <p>
+                Sábado
+              </p>
+              <ul />
+            </article>
+            <article>
+              <p>
+                Domingo
+              </p>
+              <ul />
+            </article>
+          </div>
+        </section>
+        <p>
+          Clique duplo apaga a tarefa
+        </p>
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <main
+      class="sc-AxjAm bSjxOM"
+    >
+      <section
+        class="sc-AxirZ iqyMvK"
+      >
+        <div
+          class="sc-AxiKw kZUgMc"
+        >
+          <h1>
+            MINHA SEMANA
+          </h1>
+          <div
+            class="sc-AxhCb dFmymE"
+          >
+            <label>
+              Nova Tarefa:
+              <input
+                data-testid="inputTasks"
+                type="text"
+                value=""
+              />
+            </label>
+            <label>
+              Escolha o dia:
+              <select
+                data-testid="selectTasks"
+              >
+                <option
+                  value=""
+                />
+                <option
+                  value="segunda"
+                >
+                  Segunda-Feira
+                </option>
+                <option
+                  value="terca"
+                >
+                  Terça-Feira
+                </option>
+                <option
+                  value="quarta"
+                >
+                  Quarta-Feira
+                </option>
+                <option
+                  value="quinta"
+                >
+                  Quinta-Feira
+                </option>
+                <option
+                  value="sexta"
+                >
+                  Sexta-Feira
+                </option>
+                <option
+                  value="sabado"
+                >
+                  Sábado
+                </option>
+                <option
+                  value="domingo"
+                >
+                  Domingo
+                </option>
+              </select>
+            </label>
+            <button
+              data-testid="btnTask"
+            >
+              Criar Tarefa
+            </button>
+          </div>
+        </div>
+        <div
+          class="sc-AxhUy ejHdMV"
+        >
+          <article>
+            <p>
+              Segunda
+            </p>
+            <ul />
+          </article>
+          <article>
+            <p>
+              Terça
+            </p>
+            <ul />
+          </article>
+          <article>
+            <p>
+              Quarta
+            </p>
+            <ul />
+          </article>
+          <article>
+            <p>
+              Quinta
+            </p>
+            <ul />
+          </article>
+          <article>
+            <p>
+              Sexta
+            </p>
+            <ul />
+          </article>
+          <article>
+            <p>
+              Sábado
+            </p>
+            <ul />
+          </article>
+          <article>
+            <p>
+              Domingo
+            </p>
+            <ul />
+          </article>
+        </div>
+      </section>
+      <p>
+        Clique duplo apaga a tarefa
+      </p>
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -6,6 +6,9 @@ const App = () => {
   const [tasks, setTasks] = useState([])
   const [inputTask, setInputTask] = useState("")
   const [selectDay, setSelectDay] = useState("")
+
+  const baseUrl = "https://us-central1-labenu-apis.cloudfunctions.net/generic/planner-mello-marcos-oliveira"
+
   let orderedTasks = {
                         monday: [],
                         tuesday: [],
@@ -23,7 +26,7 @@ const App = () => {
 
   const getTaskList = async() => {
     try {
-      const response = await axios.get("https://us-central1-labenu-apis.cloudfunctions.net/generic/planner-mello-marcos-oliveira")
+      const response = await axios.get(`${baseUrl}`)
       
       setTasks(response.data)
     } catch (e) {
@@ -59,7 +62,7 @@ const App = () => {
     }
   }
 
-  const onChangeInput = (event) => {
+  const onChangeTask = (event) => {
     setInputTask(event.target.value)
   }
 
@@ -79,7 +82,7 @@ const App = () => {
       }
 
       try {
-        await axios.post("https://us-central1-labenu-apis.cloudfunctions.net/generic/planner-mello-marcos-oliveira", body)
+        await axios.post(`${baseUrl}`, body)
 
         getTaskList()
         setInputTask("")
@@ -90,7 +93,7 @@ const App = () => {
   }
 
   const deleteTask = (id) => {
-    axios.delete(`https://us-central1-labenu-apis.cloudfunctions.net/generic/planner-mello-marcos-oliveira/${id}`)
+    axios.delete(`${baseUrl}/${id}`)
          .then(() => {
            
            getTaskList()
@@ -106,16 +109,17 @@ const App = () => {
         <Header>
           <h1>MINHA SEMANA</h1>
             <OptionsHeader>
-              <label htmlFor="tasks">Nova Tarefa: 
-                <input 
-                  htmlFor="tasks"
+              <label>Nova Tarefa: 
+                <input
+                  data-testid="inputTasks" 
                   type="text"
                   value={inputTask}
-                  onChange={onChangeInput}
+                  onChange={onChangeTask}
                 />
               </label>
               <label>Escolha o dia:
                 <select
+                  data-testid="selectTasks"
                   value={selectDay}
                   onChange={onChangeSelect}
                 >
@@ -129,10 +133,10 @@ const App = () => {
                   <option value="domingo">Domingo</option>
                 </select>
               </label>
-              <button onClick={createTask}>Criar Tarefa</button>
+              <button data-testid="btnTask" onClick={createTask}>Criar Tarefa</button>
             </OptionsHeader>
         </Header>
-        <DaysSection>
+        <DaysSection data-testid="days">
           <article>
             <p>Segunda</p>
             <ul>
