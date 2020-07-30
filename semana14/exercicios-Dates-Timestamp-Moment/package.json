@@ -1,0 +1,19 @@
+{
+  "name": "exercicios-Dates-Timestamp-Moment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Marcos",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.0.27",
+    "moment": "^2.27.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
