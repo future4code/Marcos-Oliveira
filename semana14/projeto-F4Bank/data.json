@@ -3,7 +3,7 @@
     "name": "Amanda Oliveira",
     "cpf": 22245698700,
     "dateOfBirth": "1988-11-22T02:00:00.000Z",
-    "balance": -7000,
+    "balance": 5000,
     "accountStatement": [
       {
         "value": 300,
@@ -39,7 +39,7 @@
     "name": "Maicon Oliveira",
     "cpf": 4445416790,
     "dateOfBirth": "2000-11-22T02:00:00.000Z",
-    "balance": 12300,
+    "balance": 300,
     "accountStatement": []
   }
 ]
