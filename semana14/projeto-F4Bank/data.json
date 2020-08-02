@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Amanda Oliveira",
+    "cpf": 22245698700,
+    "dateOfBirth": "1988-11-22T02:00:00.000Z",
+    "balance": -7000,
+    "accountStatement": [
+      {
+        "value": 300,
+        "description": "Depósito de dinheiro",
+        "date": "2020-08-02T18:30:08.217Z"
+      },
+      {
+        "value": 3000,
+        "description": "Depósito de dinheiro",
+        "date": "2020-08-02T20:10:28.722Z"
+      }
+    ]
+  },
+  {
+    "name": "Marcos Oliveira",
+    "cpf": 3335679810,
+    "dateOfBirth": "1995-11-22T02:00:00.000Z",
+    "balance": 3150,
+    "accountStatement": [
+      {
+        "value": 300,
+        "description": "Luz",
+        "datePayment": "2020-08-03T03:00:00.000Z"
+      },
+      {
+        "value": 150,
+        "description": "Academia",
+        "datePayment": "2020-08-03T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "name": "Maicon Oliveira",
+    "cpf": 4445416790,
+    "dateOfBirth": "2000-11-22T02:00:00.000Z",
+    "balance": 12300,
+    "accountStatement": []
+  }
+]
