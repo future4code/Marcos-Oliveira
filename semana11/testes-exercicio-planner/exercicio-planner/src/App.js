@@ -6,9 +6,6 @@ const App = () => {
   const [tasks, setTasks] = useState([])
   const [inputTask, setInputTask] = useState("")
   const [selectDay, setSelectDay] = useState("")
-
-  const baseUrl = "https://us-central1-labenu-apis.cloudfunctions.net/generic/planner-mello-marcos-oliveira"
-
   let orderedTasks = {
                         monday: [],
                         tuesday: [],
@@ -26,7 +23,7 @@ const App = () => {
 
   const getTaskList = async() => {
     try {
-      const response = await axios.get(`${baseUrl}`)
+      const response = await axios.get("https://us-central1-labenu-apis.cloudfunctions.net/generic/planner-mello-marcos-oliveira")
       
       setTasks(response.data)
     } catch (e) {
@@ -62,7 +59,7 @@ const App = () => {
     }
   }
 
-  const onChangeTask = (event) => {
+  const onChangeInput = (event) => {
     setInputTask(event.target.value)
   }
 
@@ -82,7 +79,7 @@ const App = () => {
       }
 
       try {
-        await axios.post(`${baseUrl}`, body)
+        await axios.post("https://us-central1-labenu-apis.cloudfunctions.net/generic/planner-mello-marcos-oliveira", body)
 
         getTaskList()
         setInputTask("")
@@ -93,7 +90,7 @@ const App = () => {
   }
 
   const deleteTask = (id) => {
-    axios.delete(`${baseUrl}/${id}`)
+    axios.delete(`https://us-central1-labenu-apis.cloudfunctions.net/generic/planner-mello-marcos-oliveira/${id}`)
          .then(() => {
            
            getTaskList()
@@ -114,7 +111,7 @@ const App = () => {
                   data-testid="inputTasks" 
                   type="text"
                   value={inputTask}
-                  onChange={onChangeTask}
+                  onChange={onChangeInput}
                 />
               </label>
               <label>Escolha o dia:
@@ -136,7 +133,7 @@ const App = () => {
               <button data-testid="btnTask" onClick={createTask}>Criar Tarefa</button>
             </OptionsHeader>
         </Header>
-        <DaysSection data-testid="days">
+        <DaysSection>
           <article>
             <p>Segunda</p>
             <ul>
