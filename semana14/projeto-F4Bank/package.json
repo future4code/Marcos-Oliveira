@@ -1,0 +1,23 @@
+{
+  "name": "projeto-f4bank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create-account": "tsc && node build/createAccount.js",
+    "get-balance": "tsc && node build/getBalance.js",
+    "get-all-accounts": "tsc && node build/getAllAccounts.js",
+    "add-balance": "tsc && node build/addBalance.js",
+    "pay-bill": "tsc && node build/payBill.js",
+    "perform-transfer": "tsc && node build/internalTransfer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.0.27",
+    "moment": "^2.27.0",
+    "typescript": "^3.9.7"
+  }
+}
